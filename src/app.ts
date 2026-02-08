@@ -1,7 +1,8 @@
 import Fastify from 'fastify'
 import cookie from '@fastify/cookie'
 
-import { usersRoute } from './routes/users.js'
+import { usersRoute } from './routes/users'
+import { mealsRoute } from './routes/meals'
 // import crypto from 'node:crypto'
 
 export const app = Fastify({
@@ -11,3 +12,4 @@ export const app = Fastify({
 app.register(cookie)
 
 app.register(usersRoute, { prefix: '/users' })
+app.register(mealsRoute, { prefix: '/meals' })
