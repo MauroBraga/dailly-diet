@@ -1,0 +1,7 @@
+node_modules
+tmp/app.db
+.env
+db
+dist
+build/
+package-lock.json
