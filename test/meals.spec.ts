@@ -9,9 +9,6 @@ import {
   expect,
   it,
 } from 'vitest'
-import { execSync } from 'child_process'
-import request from 'supertest'
-import { app } from '../src/app'
 
 describe('Meals routes', () => {
   beforeAll(async () => {
